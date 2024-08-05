@@ -1,21 +1,4 @@
-// function enviar() {
-//     let gr1 = document.getElementById("gr1").value;
-//     let gr3 = document.getElementById("gr3").value;
-//     let gr4 = document.getElementById("gr4").value;
-//     let gr5 = document.getElementById("gr5").value;
-//     let gr6 = document.getElementById("gr6").value;
-//     let ata = document.getElementById("ata").value;
-//     let telefone = document.getElementById("telefone").value;
-//     let tv = document.getElementById("tv").value;
-//     let camera = document.getElementById("camera").value;
-//     let onu = document.getElementById("onu").value;
-//     let ont = document.getElementById("ont").value;
-//     let ponto = document.getElementById("ponto").value;
-//     let conversor = document.getElementById("conversor").value;
-//     let switchHub = document.getElementById("switchHub").value;
-// }
-
-document.getElementById('dataForm').addEventListener('submit', function(event) {
+document.getElementById('equipamento').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const gr1 = document.getElementById("gr1").value;
