@@ -1,0 +1,50 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.firstContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondContainer {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+
+/* <-------------MOBILE-------------> */
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 425px) and (max-width: 575px) {
+
+}
