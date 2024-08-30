@@ -5,7 +5,7 @@
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .firstContainer {
@@ -20,31 +20,181 @@ h1 {
 }
 
 label {
-    font-size: 1.3rem;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logoSol {
+    max-width: 100%;
+}
+
+button {
+    font-size: 2rem;
 }
 
 
 /* <-------------MOBILE-------------> */
-@media (min-width: 1400px) {
-
-}
-
-@media (min-width: 1200px) {
-
-}
 
 @media (min-width: 992px) {
+    /* * {
+        background-color: red;
+    } */
 
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    .firstContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .secondContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    label {
+        font-size: 2rem;
+    }
+    
+    form {
+        display: flex;
+        margin-top: 0em;
+        unicode-bidi: isolate;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logoSol {
+        max-width: 100%;
+    }
+    
+    button {
+        font-size: 2rem;
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    /* *{
+        background-color: blue;
+    } */
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .firstContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .secondContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    label {
+        font-size: 2rem;
+    }
+    
+    form {
+        display: flex;
+        margin-top: 0em;
+        unicode-bidi: isolate;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logoSol {
+        max-width: 100%;
+
+    }
 
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    /* * {
+        background-color: red;
+    } */
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .firstContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .secondContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    label {
+        font-size: 1.3rem;
+    }
+    
+    form {
+        display: flex;
+        margin-top: 0em;
+        unicode-bidi: isolate;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logoSol {
+        max-width: 100%;
+    }
 
 }
 
 @media (min-width: 425px) and (max-width: 575px) {
+    /* *{
+        background-color: blue;
+    } */
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .firstContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .secondContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    label {
+        font-size: 1.3rem;
+    }
+    
+    form {
+        display: flex;
+        margin-top: 0em;
+        unicode-bidi: isolate;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logoSol {
+        max-width: 100%;
+    }
 
 }
