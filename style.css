@@ -198,3 +198,42 @@ button {
     }
 
 }
+
+@media (min-width: 200px) and (max-width: 424px) {
+
+    /* *{
+        background-color: red;
+    } */
+
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    .firstContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .secondContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    label {
+        font-size: 1.3rem;
+    }
+    
+    form {
+        display: flex;
+        margin-top: 0em;
+        unicode-bidi: isolate;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logoSol {
+        display: none;
+        max-width: 100%;
+    }
+}
