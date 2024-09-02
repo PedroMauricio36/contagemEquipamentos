@@ -54,4 +54,59 @@ window.addEventListener('beforeunload', function (e) {
     }
 });
 
+// Function to save form data to localStorage
+function saveFormData() {
+    const formData = {
+        gr1: document.getElementById("gr1").value,
+        gr3: document.getElementById("gr3").value,
+        gr4: document.getElementById("gr4").value,
+        gr5: document.getElementById("gr5").value,
+        gr6: document.getElementById("gr6").value,
+        ata: document.getElementById("ata").value,
+        telefone: document.getElementById("telefone").value,
+        tv: document.getElementById("tv").value,
+        camera: document.getElementById("camera").value,
+        onu: document.getElementById("onu").value,
+        ont: document.getElementById("ont").value,
+        ponto: document.getElementById("ponto").value,
+        conversor: document.getElementById("conversor").value,
+        switchHub: document.getElementById("switchHub").value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+// Function to load form data from localStorage
+function loadFormData() {
+    const savedData = localStorage.getItem('formData');
+    if (savedData) {
+        const formData = JSON.parse(savedData);
+        document.getElementById('name').value = formData.name || '';
+        document.getElementById('email').value = formData.email || '';
+        document.getElementById('phone').value = formData.phone || '';
+        document.getElementById('message').value = formData.message || '';
+        document.getElementById("gr1").value = formData.gr1 || '';
+        document.getElementById("gr3").value = formData.gr3 || '';
+        document.getElementById("gr4").value = formData.gr4 || '';
+        document.getElementById("gr5").value = formData.gr5 || '';
+        document.getElementById("gr6").value = formData.gr6 || '';
+        document.getElementById("ata").value = formData.ata || '';
+        document.getElementById("telefone").value = formData.telefone || '';
+        document.getElementById("tv").value = formData.tv || '';
+        document.getElementById("camera").value = formData.camera || '';
+        document.getElementById("onu").value = formData.onu || '';
+        document.getElementById("ont").value = formData.ont || '';
+        document.getElementById("ponto").value = formData.ponto || '';
+        document.getElementById("conversor").value = formData.conversor || '';
+        document.getElementById("switchHub").value = formData.switchHub || '';
+    }
+}
+
+// Save form data whenever the user types
+document.getElementById('dataForm').addEventListener('input', saveFormData);
+
+// Load form data when the page loads
+window.addEventListener('load', loadFormData);
+
+
+
 
