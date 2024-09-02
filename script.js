@@ -1,3 +1,5 @@
+let formSubmitted = false;
+
 document.getElementById('equipamento').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -36,7 +38,19 @@ document.getElementById('equipamento').addEventListener('submit', function(event
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
     
     if (confirm("Enviar para WhatsApp Solutec?")) {
+        formSubmitted = true;
         window.open(whatsappUrl, '_blank');
+    } else {
+        console.log('Cancelado');
+    }
+});
+
+window.addEventListener('beforeunload', function (e) {
+    if (!formSubmitted) {
+        const confirmationMessage = 'Contagem não enviada. Sair mesmo assim?';
+        
+        e.returnValue = confirmationMessage; // For most browsers
+        return confirmationMessage;          // For some browsers
     }
 });
 
